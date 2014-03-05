@@ -14,7 +14,7 @@
 
 @implementation EbayHelper
 
-#define EBAY_PRODUCTION_KEY @"TullieMu-2c5f-4318-bd95-7fabad12e87f"
+#define EBAY_PRODUCTION_KEY @""
 #define EBAY_ENTRIES_PER_PAGE 25
 
 + (NSURL *)getEbayFetchURL:(NSString *)keyword maxPrice:(NSInteger)maxPrice minPrice:(NSInteger)minPrice

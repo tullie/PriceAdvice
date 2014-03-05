@@ -14,8 +14,8 @@
 
 @implementation AmazonHelper
 
-#define AMAZON_PUBLIC_KEY @"AKIAJYSF3NYIGYFIK3VA" //AKIAJYSF3NYIGYFIK3VA //AKIAJ7VH2ZWNRH2QFNYA
-#define AMAZON_SECRET_KEY @"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"
+#define AMAZON_PUBLIC_KEY @"" 
+#define AMAZON_SECRET_KEY @""
 #define EBAY_ENTRIES_PER_PAGE 20
 
 + (NSURL *)getAmazonItemsURL:(NSString *)keyword

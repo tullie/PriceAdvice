@@ -571,14 +571,15 @@
                                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-b4-kMf">
-                                        <rect key="frame" x="121" y="230" width="37" height="37"/>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-b4-kMf">
+                                        <rect key="frame" x="122" y="186" width="37" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="color" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="IMW-b4-kMf" firstAttribute="centerX" secondItem="ZLu-Jy-OaV" secondAttribute="centerX" id="1tG-9y-8mI"/>
                                     <constraint firstItem="arB-IE-Oi3" firstAttribute="centerX" secondItem="ZLu-Jy-OaV" secondAttribute="centerX" id="2N3-Qe-5qb"/>
                                     <constraint firstItem="M9m-pw-fmi" firstAttribute="top" secondItem="0Dr-yu-Giz" secondAttribute="bottom" constant="61" id="Aty-mw-HPJ"/>
                                     <constraint firstItem="ZLu-Jy-OaV" firstAttribute="top" secondItem="aB9-3L-4Nw" secondAttribute="bottom" constant="13" id="CLM-xU-X2F"/>
@@ -592,15 +593,14 @@
                                     <constraint firstItem="arB-IE-Oi3" firstAttribute="centerX" secondItem="M9m-pw-fmi" secondAttribute="centerX" id="Q61-Gj-y2z"/>
                                     <constraint firstItem="1Fk-sh-5Ib" firstAttribute="leading" secondItem="mQ8-Rb-kvs" secondAttribute="leading" constant="20" symbolic="YES" id="RH2-0p-EOp"/>
                                     <constraint firstItem="SZQ-Tw-tzN" firstAttribute="baseline" secondItem="V2p-rU-nS0" secondAttribute="baseline" id="SjE-k2-SoX"/>
-                                    <constraint firstItem="IMW-b4-kMf" firstAttribute="centerX" secondItem="M9m-pw-fmi" secondAttribute="centerX" id="UHH-Z7-ufR"/>
                                     <constraint firstItem="aB9-3L-4Nw" firstAttribute="top" secondItem="arB-IE-Oi3" secondAttribute="bottom" constant="8" symbolic="YES" id="UbE-28-zmI"/>
                                     <constraint firstItem="1Fk-sh-5Ib" firstAttribute="top" secondItem="mQ8-Rb-kvs" secondAttribute="top" constant="36" id="Vmp-H9-VwJ"/>
                                     <constraint firstItem="iH3-V9-JhR" firstAttribute="top" secondItem="ZLu-Jy-OaV" secondAttribute="bottom" constant="8" symbolic="YES" id="WYe-Wg-oqM"/>
                                     <constraint firstAttribute="trailing" secondItem="1Fk-sh-5Ib" secondAttribute="trailing" constant="20" symbolic="YES" id="XTn-Kd-Aim"/>
+                                    <constraint firstItem="IMW-b4-kMf" firstAttribute="top" secondItem="0Dr-yu-Giz" secondAttribute="bottom" constant="31" id="Zl5-Co-CYi"/>
                                     <constraint firstItem="arB-IE-Oi3" firstAttribute="top" secondItem="g7x-ln-qij" secondAttribute="bottom" constant="26" id="amg-ak-oCh"/>
                                     <constraint firstItem="0Dr-yu-Giz" firstAttribute="top" secondItem="1Fk-sh-5Ib" secondAttribute="bottom" constant="8" symbolic="YES" id="dsm-gN-EIO"/>
                                     <constraint firstItem="aB9-3L-4Nw" firstAttribute="top" secondItem="M9m-pw-fmi" secondAttribute="bottom" constant="6" id="i0X-YE-9TE"/>
-                                    <constraint firstItem="ZLu-Jy-OaV" firstAttribute="top" secondItem="IMW-b4-kMf" secondAttribute="bottom" constant="29" id="knh-Mm-JPP"/>
                                     <constraint firstItem="arB-IE-Oi3" firstAttribute="centerX" secondItem="iH3-V9-JhR" secondAttribute="centerX" id="l13-vq-Has"/>
                                     <constraint firstItem="V2p-rU-nS0" firstAttribute="trailing" secondItem="1Fk-sh-5Ib" secondAttribute="trailing" id="mh8-ep-pa5"/>
                                     <constraint firstItem="arB-IE-Oi3" firstAttribute="centerX" secondItem="aB9-3L-4Nw" secondAttribute="centerX" id="oop-jm-41A"/>
