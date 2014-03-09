@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		050B764818AC2EED0053C2BD /* ItemListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050B764718AC2EED0053C2BD /* ItemListTableViewController.m */; };
-		050B768C18ACDC610053C2BD /* AmazonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 050B768B18ACDC610053C2BD /* AmazonHelper.m */; };
 		053B181C18B9E4010011032A /* MathFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 053B181B18B9E4010011032A /* MathFunctions.m */; };
 		053B181F18B9F4B40011032A /* KeywordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 053B181E18B9F4B40011032A /* KeywordListViewController.m */; };
 		0543E45918A7C12200FB6380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0543E45818A7C12200FB6380 /* Foundation.framework */; };
@@ -44,9 +43,7 @@
 		0546499218B89D9500BBADDC /* NMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0546497718B89D9500BBADDC /* NMRangeSlider.m */; };
 		0546499618B9860600BBADDC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0546499518B9860600BBADDC /* Main_iPhone.storyboard */; };
 		0546499918B9873900BBADDC /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0546499818B9873900BBADDC /* ItemTableViewCell.m */; };
-		05704FC718B595CF00A4021B /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05704FC618B595CF00A4021B /* AWSRuntime.framework */; };
 		0570510E18B5A48A00A4021B /* DTBase64Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 0570507A18B5A48A00A4021B /* DTBase64Coding.m */; };
-		0570515018B5B62200A4021B /* AmazonPriceCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0570514F18B5B62200A4021B /* AmazonPriceCalculator.m */; };
 		0570515318B5B6CD00A4021B /* EbayPriceCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0570515218B5B6CD00A4021B /* EbayPriceCalculator.m */; };
 		05878E4B18ADE3CD0031F39F /* InfomationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05878E4A18ADE3CD0031F39F /* InfomationViewController.m */; };
 		05878E4E18ADE64F0031F39F /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 05878E4D18ADE64F0031F39F /* Colours.m */; };
@@ -65,8 +62,6 @@
 /* Begin PBXFileReference section */
 		050B764618AC2EED0053C2BD /* ItemListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemListTableViewController.h; sourceTree = "<group>"; };
 		050B764718AC2EED0053C2BD /* ItemListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListTableViewController.m; sourceTree = "<group>"; };
-		050B768A18ACDC610053C2BD /* AmazonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonHelper.h; sourceTree = "<group>"; };
-		050B768B18ACDC610053C2BD /* AmazonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonHelper.m; sourceTree = "<group>"; };
 		053B181A18B9E4010011032A /* MathFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFunctions.h; sourceTree = "<group>"; };
 		053B181B18B9E4010011032A /* MathFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathFunctions.m; sourceTree = "<group>"; };
 		053B181D18B9F4B40011032A /* KeywordListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeywordListViewController.h; sourceTree = "<group>"; };
@@ -1814,11 +1809,8 @@
 		0570491818B4B8E100A4021B /* SecurityTokenServiceRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTokenServiceRequest.h; sourceTree = "<group>"; };
 		0570491918B4B8E100A4021B /* SecurityTokenServiceResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTokenServiceResponse.h; sourceTree = "<group>"; };
 		0570491A18B4B8E100A4021B /* SecurityTokenServiceResponseUnmarshaller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityTokenServiceResponseUnmarshaller.h; sourceTree = "<group>"; };
-		05704FC618B595CF00A4021B /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRuntime.framework; path = "../../../Downloads/aws-ios-sdk-1.7.1/AWSRuntime.framework"; sourceTree = "<group>"; };
 		0570507918B5A48A00A4021B /* DTBase64Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTBase64Coding.h; path = Core/Source/DTBase64Coding.h; sourceTree = "<group>"; };
 		0570507A18B5A48A00A4021B /* DTBase64Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTBase64Coding.m; path = Core/Source/DTBase64Coding.m; sourceTree = "<group>"; };
-		0570514E18B5B62200A4021B /* AmazonPriceCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPriceCalculator.h; sourceTree = "<group>"; };
-		0570514F18B5B62200A4021B /* AmazonPriceCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPriceCalculator.m; sourceTree = "<group>"; };
 		0570515118B5B6CD00A4021B /* EbayPriceCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EbayPriceCalculator.h; sourceTree = "<group>"; };
 		0570515218B5B6CD00A4021B /* EbayPriceCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EbayPriceCalculator.m; sourceTree = "<group>"; };
 		05878E4918ADE3CD0031F39F /* InfomationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfomationViewController.h; sourceTree = "<group>"; };
@@ -1832,7 +1824,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05704FC718B595CF00A4021B /* AWSRuntime.framework in Frameworks */,
 				0543E45B18A7C12200FB6380 /* CoreGraphics.framework in Frameworks */,
 				0543E45D18A7C12200FB6380 /* UIKit.framework in Frameworks */,
 				0543E45918A7C12200FB6380 /* Foundation.framework in Frameworks */,
@@ -1874,7 +1865,6 @@
 		0543E45718A7C12200FB6380 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05704FC618B595CF00A4021B /* AWSRuntime.framework */,
 				0570427018B4B8D900A4021B /* include */,
 				0543E45818A7C12200FB6380 /* Foundation.framework */,
 				0543E45A18A7C12200FB6380 /* CoreGraphics.framework */,
@@ -1935,12 +1925,8 @@
 				0543E4AE18A89FB500FB6380 /* PriceCalculator.m */,
 				0570515118B5B6CD00A4021B /* EbayPriceCalculator.h */,
 				0570515218B5B6CD00A4021B /* EbayPriceCalculator.m */,
-				0570514E18B5B62200A4021B /* AmazonPriceCalculator.h */,
-				0570514F18B5B62200A4021B /* AmazonPriceCalculator.m */,
 				0543E49018A7C14700FB6380 /* EbayHelper.h */,
 				0543E49118A7C14700FB6380 /* EbayHelper.m */,
-				050B768A18ACDC610053C2BD /* AmazonHelper.h */,
-				050B768B18ACDC610053C2BD /* AmazonHelper.m */,
 				053B181A18B9E4010011032A /* MathFunctions.h */,
 				053B181B18B9E4010011032A /* MathFunctions.m */,
 				05878E4C18ADE64F0031F39F /* Colours.h */,
@@ -3908,7 +3894,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0543E4A618A888AF00FB6380 /* PriceViewController.m in Sources */,
-				050B768C18ACDC610053C2BD /* AmazonHelper.m in Sources */,
 				0543E49218A7C14700FB6380 /* EbayHelper.m in Sources */,
 				053B181C18B9E4010011032A /* MathFunctions.m in Sources */,
 				0546499218B89D9500BBADDC /* NMRangeSlider.m in Sources */,
@@ -3919,7 +3904,6 @@
 				0543E49F18A7D35D00FB6380 /* XMLDictionary.m in Sources */,
 				053B181F18B9F4B40011032A /* KeywordListViewController.m in Sources */,
 				0570510E18B5A48A00A4021B /* DTBase64Coding.m in Sources */,
-				0570515018B5B62200A4021B /* AmazonPriceCalculator.m in Sources */,
 				0546495718B8908700BBADDC /* ItemDetailViewController.m in Sources */,
 				0546499918B9873900BBADDC /* ItemTableViewCell.m in Sources */,
 				0543E46518A7C12200FB6380 /* main.m in Sources */,
@@ -4059,10 +4043,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tulliemurrell/Downloads/aws-ios-sdk-1.7.1",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Price Advice/Price Advice-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -4083,10 +4064,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/tulliemurrell/Downloads/aws-ios-sdk-1.7.1",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Price Advice/Price Advice-Prefix.pch";
 				HEADER_SEARCH_PATHS = (

@@ -66,19 +66,38 @@
     NSMutableArray *ebayItemURL = [[NSMutableArray alloc] init];
     
     if (ebayItemList){
-        for (NSDictionary *item in ebayItemList){
-            item[@"title"] ? [ebayItemNameList addObject:item[@"title"]] : [ebayItemNameList addObject:@"unknown"]; // Title
-            item[@"subtitle"] ? [ebayItemSubtitle addObject:item[@"subtitle"]] : [ebayItemSubtitle addObject:@""]; // Subtitle
-            item[@"galleryURL"] ? [ebayItemThumbnail addObject:item[@"galleryURL"]] : [ebayItemThumbnail addObject:@""]; // Thumbnail
-            item[@"viewItemURL"] ? [ebayItemURL addObject:item[@"viewItemURL"]] : [ebayItemURL addObject:@""]; // Item URL
+        
+        // Check if dictionary is standard eBay results
+        // ebay returns item as the dictionary if there is only one item
+        if ([ebayItemList isKindOfClass:[NSArray class]]) {
+            for (id item in ebayItemList){
+                if ([item isKindOfClass:[NSDictionary class]]){
+                    [item objectForKey:@"title"] ? [ebayItemNameList addObject:item[@"title"]] : [ebayItemNameList addObject:@"unknown"]; // Title
+                    [item objectForKey:@"subtitle"] ? [ebayItemSubtitle addObject:item[@"subtitle"]] : [ebayItemSubtitle addObject:@""]; // Subtitle
+                    [item objectForKey:@"galleryURL"] ? [ebayItemThumbnail addObject:item[@"galleryURL"]] : [ebayItemThumbnail addObject:@""]; // Thumbnail
+                    [item objectForKey:@"viewItemURL"] ? [ebayItemURL addObject:item[@"viewItemURL"]] : [ebayItemURL addObject:@""]; // Item URL
+                    //Price
+                    NSDictionary *sellingStatus = item[@"sellingStatus"];
+                    NSDictionary *convertedPrice = sellingStatus[@"convertedCurrentPrice"];
+                    NSNumber *priceFloat = [[NSNumber alloc] initWithFloat:[convertedPrice[@"__text"] floatValue]];
+                    [ebayPriceList addObject:priceFloat];
+                }
+                else {
+                    continue;
+                }
+            }
+        }
+        else {
+            [ebayItemList objectForKey:@"title"] ? [ebayItemNameList addObject:ebayItemList[@"title"]] : [ebayItemNameList addObject:@"unknown"]; // Title
+            [ebayItemList objectForKey:@"subtitle"] ? [ebayItemSubtitle addObject:ebayItemList[@"subtitle"]] : [ebayItemSubtitle addObject:@""]; // Subtitle
+            [ebayItemList objectForKey:@"galleryURL"] ? [ebayItemThumbnail addObject:ebayItemList[@"galleryURL"]] : [ebayItemThumbnail addObject:@""]; // Thumbnail
+            [ebayItemList objectForKey:@"viewItemURL"] ? [ebayItemURL addObject:ebayItemList[@"viewItemURL"]] : [ebayItemURL addObject:@""]; // Item URL
             
             //Price
-            NSDictionary *sellingStatus = item[@"sellingStatus"];
+            NSDictionary *sellingStatus = ebayItemList[@"sellingStatus"];
             NSDictionary *convertedPrice = sellingStatus[@"convertedCurrentPrice"];
             NSNumber *priceFloat = [[NSNumber alloc] initWithFloat:[convertedPrice[@"__text"] floatValue]];
             [ebayPriceList addObject:priceFloat];
-            
-            //NSLog (@"Item Price: %f, Item title: %@", [priceFloat floatValue], item[@"title"]);
         }
         
         self.itemSubtitle = ebayItemSubtitle;
