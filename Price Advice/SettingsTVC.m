@@ -12,7 +12,7 @@
 #import "MathFunctions.h"
 
 
-@interface SettingsTVC () <UITableViewDelegate, UITableViewDataSource> //UIPickerDelegate, UIPickerDataSource
+@interface SettingsTVC () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableViewCell *sliderCell;
 
@@ -77,7 +77,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1; //2
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -93,9 +93,6 @@
         case 0:
             cell = self.sliderCell;
             break;
-//        case 1:
-//            cell = self.categoryCell;
-//            break;
     }
     return cell;
 }
@@ -112,48 +109,5 @@
     
     return headerView;
 }
-
-/*
- ------------------------------------
- //////////CATEGORY PICKER///////////
- ------------------------------------
- 
- @property (strong, nonatomic) IBOutlet UITableViewCell *categoryCell;
- @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
- @property (strong, nonatomic) NSArray *ebayCategories;
- @property (strong, nonatomic) NSString *pickedCategory;
- 
- 
- - (NSArray *)ebayCategories
- {
- if (!_ebayCategories){
- _ebayCategories = [EbayHelper ebayCategories];
- }
- return _ebayCategories;
- }
- 
- #pragma mark - Picker View
- 
- - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
- {
- self.pickedCategory = [self.ebayCategories objectAtIndex:row];
- }
- 
- -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
- {
- return [self.ebayCategories objectAtIndex:row];
- }
- 
- - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
- {
- return 1;
- }
- 
- - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
- {
- return [self.ebayCategories count];
- }
- */
-
 
 @end
